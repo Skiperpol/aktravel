@@ -108,6 +108,12 @@ nav.stroke ul li a:not(#not):hover:after {
 .navbar-toggler-icon {
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png") !important;
 }
+
+.card-img-top {
+    height: 30vh;
+    width: auto;
+    object-fit: cover;
+}
 /* CUSTOMOWY SCROLLBAR */
     /* width */
     ::-webkit-scrollbar {
