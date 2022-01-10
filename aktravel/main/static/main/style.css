@@ -1,0 +1,130 @@
+:root { 
+    overflow-x: hidden;
+    font-size: 1.4em;
+}
+
+#container {
+    width: 100vw;
+    height: auto;
+}
+
+#main_photo {
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    width:100%; 
+    height:100%;
+}
+
+#logo_ak_travel {
+    width: 80%;
+}
+
+.mainsection {
+    margin-top: 40vh;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    padding-top: 6vh;
+}
+
+.subsection {
+    margin-top: 6vh;
+    width: 90vw;
+    height: 84vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.augustyn {
+    color: rgba(255, 255, 255, 0.726);
+    position: relative;
+    top: 28vh;
+    left: 5vw;
+    transform: translate(-0%, -50%);
+    font-family: 'Poppins', sans-serif;
+    width: 50vw;
+}
+
+
+
+/* stroke */
+nav ul li a:not(#not),
+nav ul li a:not(#not):after,
+nav ul li a:not(#not):before {
+  transition: all .5s;
+}
+nav ul li a:not(#not):hover {
+  color: #555;
+}
+nav.stroke ul li a:not(#not) {
+  position: relative;
+}
+nav.stroke ul li a:not(#not):after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:not(#not):hover:after {
+  width: 100%;
+}
+  
+#h2slider {
+    padding-top: 2vh;
+}
+
+.ksiazki {
+    margin-top: 15vh;
+}
+
+.card-title {
+    height: 2.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 5em;
+}
+
+.navbar-toggler-icon {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png") !important;
+}
+/* CUSTOMOWY SCROLLBAR */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
