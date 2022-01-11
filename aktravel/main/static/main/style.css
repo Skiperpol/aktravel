@@ -69,6 +69,27 @@
     color: #414141cb;
 }
 
+.btn {
+    margin-top: 3vh;
+}
+
+.card-img-top {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .card-img-top img {
+    transition: transform .6s ease;
+    height: 30vh;
+    width: auto;
+    object-fit: cover;
+    
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .card-img-top:hover img {
+    transform: scale(1.2);
+  }
 
 /* stroke */
 nav ul li a:not(#not),
@@ -128,11 +149,6 @@ nav.stroke ul li a:not(#not):hover:after {
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png") !important;
 }
 
-.card-img-top {
-    height: 30vh;
-    width: auto;
-    object-fit: cover;
-}
 /* CUSTOMOWY SCROLLBAR */
     /* width */
     ::-webkit-scrollbar {

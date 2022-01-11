@@ -42,11 +42,11 @@
             <div class="card">
             {% with id=forloop.counter0|stringformat:"s" %}
             {% with oferta=oferty|get_item:id %}
-            <img
-                src="{{ oferta.zdjecie_glowne }}"
-                class="card-img-top"
-                alt="Waterfall"
-            />
+            <div class="card-img-top">
+                <img
+                    src="{{ oferta.zdjecie_glowne }}"
+                    alt="Waterfall"
+                /></div>
             <div class="card-body">
                 <h5 class="card-title">{{ oferta }}</h5>
                 <p class="card-text">
@@ -63,11 +63,11 @@
             <div class="card">
             {% with id=forloop.counter0|stringformat:"s" %}
             {% with oferta=oferty|get_item2:id %}
-            <img
-                src="{{ oferta.zdjecie_glowne }}"
-                class="card-img-top"
-                alt="Sunset Over the Sea"
-            />
+            <div class="card-img-top">
+                <img
+                    src="{{ oferta.zdjecie_glowne }}"
+                    alt="Waterfall"
+                /></div>
             <div class="card-body">
                 <h5 class="card-title">{{ oferta }}</h5>
                 <p class="card-text">
@@ -84,11 +84,11 @@
             <div class="card">
             {% with id=forloop.counter0|stringformat:"s" %}
             {% with oferta=oferty|get_item3:id %}
-            <img
-                src="{{ oferta.zdjecie_glowne }}"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-            />
+            <div class="card-img-top">
+                <img
+                    src="{{ oferta.zdjecie_glowne }}"
+                    alt="Waterfall"
+                /></div>
             <div class="card-body">
                 <h5 class="card-title">{{ oferta }}</h5>
                 <p class="card-text">
@@ -151,11 +151,11 @@
             <div class="card">
             {% with id=forloop.counter0|stringformat:"s" %}
             {% with ksiazka=ksiazki|get_item_ksiazki:id %}
+            <div class="card-img-top">
             <img
                 src="{{ ksiazka.zdjecie_glowne }}"
-                class="card-img-top"
                 alt="Waterfall"
-            />
+            /></div>
             <div class="card-body">
                 <h5 class="card-title">{{ ksiazka }}</h5>
                 <p class="card-text">
