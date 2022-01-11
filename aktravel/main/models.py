@@ -6,3 +6,10 @@ class Oferta(models.Model):
     zdjecie_glowne = models.ImageField(null=True, blank=True)
     def __str__(self):
         return self.name
+
+class Ksiazki(models.Model):
+    tytul = models.CharField(max_length=200)
+    autor = models.CharField(max_length=200)
+    zdjecie_glowne = models.ImageField(null=True, blank=True)
+    def __str__(self):
+        return self.name
