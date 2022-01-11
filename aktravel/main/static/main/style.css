@@ -10,7 +10,7 @@
 }
 
 #main_photo {
-    position: absolute;
+    position: fixed;
     top: 6vh;
     left: 0;
     object-fit: cover;
@@ -33,14 +33,6 @@
     background-color: white;
     font-family: 'Lato', sans-serif;
     padding-top: 6vh;
-}
-
-.subsection {
-    margin-top: 6vh;
-    width: 90vw;
-    height: 84vh;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .main_podstrony {

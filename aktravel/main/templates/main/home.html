@@ -4,11 +4,9 @@
 {% block content %}
 
 <main class="mainsection">
-<section class="subsection">
 <!-- OFERTY -->
 <!-- oferty wrapper start -->
-<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel"
->
+<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
 <!-- Controls -->
 <div class="d-flex justify-content-center mb-4">
     <button
@@ -31,7 +29,7 @@
     </button>
 </div>
 <!-- Inner -->
-<div class="carousel-inner py-4">
+<div class="carousel-inner">
     {% load poll_extras %}
     {% for i in loop %}
     <!-- Single item -->
@@ -111,7 +109,7 @@
 </div>
 <!-- oferty wrapper end -->
 
-<a href="{% url 'oferty' %}" type="button" class="btn btn-primary mt-3">Wszystkie oferty</a>
+<a href="{% url 'oferty' %}" type="button" class="btn btn-primary mt-3">Wszystkie oferty</a></div>
 
 
 <!-- KSIĄŻKI -->
@@ -140,7 +138,7 @@
     </button>
 </div>
 <!-- Inner -->
-<div class="carousel-inner py-4">
+<div class="carousel-inner">
     {% load poll_extras %}
     {% for i in loop_ksiazki %}
     <!-- Single item -->
@@ -177,8 +175,7 @@
 </div>
 <!-- ksiazki wrapper end -->
 
-<a href="{% url 'ksiazki' %}" type="button" class="btn btn-primary mt-3">Wszystkie książki</a>
+<a href="{% url 'ksiazki' %}" type="button" class="btn btn-primary mt-3">Wszystkie książki</a></div>
 
-</section>
 </main>
 {% endblock %}
