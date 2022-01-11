@@ -153,7 +153,7 @@ nav.stroke ul li a:not(#not):hover:after {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: auto;
-    height: 30vh;
+    height: 50vh;
     object-fit: cover;
     filter: brightness(0.8);
     transition: filter .4s ease;
@@ -164,11 +164,30 @@ nav.stroke ul li a:not(#not):hover:after {
 }
 
 .special-card {
+    background-color: rgb(241, 241, 241);
     height: auto;
+    position: relative;
+}
+
+
+@keyframes example {
+    from {
+        top: 0vh;}
+    to {
+        top: -15vh;}
+  }
+  
+.round_card:hover .special-card {
+    animation: example .3s forwards linear;
 }
 
 .round_card:hover .zdjecie_list_ofert {
     filter: brightness(1);
+}
+
+.round_card {
+    overflow: hidden;
+    height: 60vh;
 }
 
 /* CUSTOMOWY SCROLLBAR */
