@@ -3,6 +3,8 @@
 {% block image %}<img src="{% static 'main/airplane_main_photo.jpg' %}" alt="Main photo" id="main_photo">{% endblock %}
 {% block content %}
 
+<main class="mainsection">
+<section class="subsection">
 <!-- OFERTY -->
 <!-- oferty wrapper start -->
 <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel"
@@ -140,69 +142,26 @@
 <!-- Inner -->
 <div class="carousel-inner py-4">
     {% load poll_extras %}
-    {% for i in loop %}
+    {% for i in loop_ksiazki %}
     <!-- Single item -->
-    <div class="carousel-item {% if i == oferty.first %} {{ active }} {% endif %}">
+    <div class="carousel-item {% if i == ksiazki.first %} {{ active }} {% endif %}">
     <div class="container">
         <div class="row">
-        <div class="col-lg-4 {% if i != oferty.first %} {{ class }} {% endif %}">
+        <div class="ksiazka_karuzela">
             <div class="card">
             {% with id=forloop.counter0|stringformat:"s" %}
-            {% with oferta=oferty|get_item:id %}
+            {% with ksiazka=ksiazki|get_item_ksiazki:id %}
             <img
-                src="{{ oferta.zdjecie_glowne }}"
+                src="{{ ksiazka.zdjecie_glowne }}"
                 class="card-img-top"
                 alt="Waterfall"
             />
             <div class="card-body">
-                <h5 class="card-title">{{ oferta }}</h5>
+                <h5 class="card-title">{{ ksiazka }}</h5>
                 <p class="card-text">
-                {{ oferta.opis }}
+                {{ ksiazka.opis }}
                 </p>
                 <a href="#!" class="btn btn-outline-primary">Szczegóły</a>
-            </div>
-            {% endwith %}
-            {% endwith %}
-            </div>
-        </div>
-
-        <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-            {% with id=forloop.counter0|stringformat:"s" %}
-            {% with oferta=oferty|get_item2:id %}
-            <img
-                src="{{ oferta.zdjecie_glowne }}"
-                class="card-img-top"
-                alt="Sunset Over the Sea"
-            />
-            <div class="card-body">
-                <h5 class="card-title">{{ oferta }}</h5>
-                <p class="card-text">
-                {{ oferta.opis }}
-                </p>
-                <a href="#!" class="btn btn-outline-primary">Szczegóły</a>
-            </div>
-            {% endwith %}
-            {% endwith %}
-            </div>
-        </div>
-
-        <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-            {% with id=forloop.counter0|stringformat:"s" %}
-            {% with oferta=oferty|get_item3:id %}
-            <img
-                src="{{ oferta.zdjecie_glowne }}"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-            />
-            <div class="card-body">
-                <h5 class="card-title">{{ oferta }}</h5>
-                <p class="card-text">
-                {{ oferta.opis }}
-                </p>
-                <a href="#!" class="btn btn-outline-primary">Szczegóły</a>
-                
             </div>
             {% endwith %}
             {% endwith %}
@@ -219,4 +178,7 @@
 <!-- ksiazki wrapper end -->
 
 <a href="{% url 'ksiazki' %}" type="button" class="btn btn-primary mt-3">Wszystkie książki</a>
+
+</section>
+</main>
 {% endblock %}

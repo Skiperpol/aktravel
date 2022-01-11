@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block image %}{% endblock %}
+{% block cytat %}{% endblock %}
+{% block content %}
+
+<main class="main_podstrony">
+    <section>
+        {% block podstrona %}
+        <h3>Dostępne oferty</h3>
+        {% endblock %}
+    </section>
+</main>
+
+{% endblock %}

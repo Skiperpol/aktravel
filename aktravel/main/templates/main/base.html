@@ -38,7 +38,7 @@
         {% block image %}{% endblock %}
         <nav class="stroke navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand ms-4" href="{% url '' %}">
+              <a class="navbar-brand ms-5" href="{% url '' %}">
                 <img src="{% static 'main/logo_ak_travel.png' %}" alt="Logo AK Travel" id="logo_ak_travel">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,15 +69,13 @@
               </div>
             </div>
           </nav>
+        {% block cytat %}
         <h2 class="augustyn"><i>"Świat jest książką i ci, którzy nie podróżują czytają tylko jedną stronę”</i>
             <div class="mt-2">św. Augustyn</div>
         </h2>
-        <main class="mainsection">
-            <section class="subsection">
-              {% block content %}
-              {% endblock %}
-            </section>
-        </main>
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
 </html>
