@@ -149,6 +149,28 @@ nav.stroke ul li a:not(#not):hover:after {
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png") !important;
 }
 
+.zdjecie_list_ofert {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: auto;
+    height: 30vh;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: filter .4s ease;
+}
+
+.zdjecie_list_ofert:hover {
+    filter: brightness(1);
+}
+
+.special-card {
+    height: auto;
+}
+
+.round_card:hover .zdjecie_list_ofert {
+    filter: brightness(1);
+}
+
 /* CUSTOMOWY SCROLLBAR */
     /* width */
     ::-webkit-scrollbar {

@@ -7,7 +7,18 @@
 <main class="main_podstrony">
     <section>
         {% block podstrona %}
-        <h3>Dostępne oferty</h3>
+        <h3 class="mb-5">Dostępne oferty</h3>
+
+        {% for oferta in oferty %}
+        <div class="card mb-4 round_card">
+            <img class="zdjecie_list_ofert" src="{{ oferta.zdjecie_glowne.url }}" alt="Card image cap">
+            <div class="card-body special-card">
+              <h5 class="card-title">{{ oferta }}</h5>
+              <p class="card-text">{{ oferta.opis }}</p>
+            </div>
+          </div>
+        {% endfor %}
+
         {% endblock %}
     </section>
 </main>
