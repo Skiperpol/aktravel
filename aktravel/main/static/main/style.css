@@ -75,7 +75,6 @@ html {
     top: 28vh;
     left: 5vw;
     transform: translate(-0%, -50%);
-    font-family: 'Poppins', sans-serif;
     width: 50vw;
 }
 
@@ -258,12 +257,8 @@ nav.stroke ul li a:not(#not):hover:after {
     margin-bottom: 2vh;
     }
 
-a {
+li a {
     color: rgba(16, 16, 100, 0.7) !important;
-}
-
-h4 a {
-    color: rgb(0,139,165) !important;
 }
 
 .linki_dokumentow,
@@ -276,6 +271,7 @@ h4 a {
 }
 .linki_dokumentow {
   position: relative;
+  color: rgba(16, 16, 100, 0.7) !important;
 }
 .linki_dokumentow:after {
   position: absolute;
@@ -291,6 +287,11 @@ h4 a {
 }
 .linki_dokumentow:hover:after {
   width: 100%;
+}
+
+
+h4 .linki_dokumentow {
+    color: rgb(0,139,165) !important;
 }
 
 footer {
