@@ -1,5 +1,17 @@
 {% extends 'main/oferty.html' %}
 
+{% load static %}
 {% block podstrona %}
-<h3>Informacje związane z pandemią COVID19</h3>
+<div class="textsection">
+<h3 style="color: rgb(0,139,165);">Informacje związane z pandemią COVID19</h3>
+    <ul class="mt-3">
+        <li><a class="linki_dokumentow" href="https://www.gov.pl/web/koronawirus/granice-i-ruch-miedzynarodowy" target="_blank">Pandemia a ruch międzynarodowy</a></li>
+        <li><a class="linki_dokumentow" href="https://www.gov.pl/web/mobywatel/polakzagranica" target="_blank">Polak za granicą</a></li>
+    </ul>
+    
+<h4 class="mt-10" style="color: rgb(0,139,165) !important;">      
+<a class="linki_dokumentow" href="{% static 'main/badania_antygenowe.odt' %}" target="_blank">Kliknij tutaj, jeśli potrzebujesz testu - Badania antygenowe i PCR</a>
+</h4>  
+    
+</div>
 {% endblock %}

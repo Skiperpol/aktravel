@@ -3,11 +3,17 @@
     font-size: 1.4em;
 }
 
+html {
+    height: 100%;
+}
+
 #container {
     width: 100vw;
-    height: auto;
+    height: 100%;
     margin-top: 15vh;
-    min-height: 57vh;
+    min-height: 62vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #main_photo {
@@ -49,12 +55,16 @@
     text-justify: inter-word;
 }
 
+.aktravel_footer_bug {
+    padding-bottom: 42vh;
+}
+
 .main_podstrony {
-    margin-top: 20vh;
+    margin-top: 7vh;
     width: 90vw;
     margin-right: auto;
     margin-left: auto;
-    height: auto;
+    height: 100%;
     background-color: white;
     font-family: 'Lato', sans-serif;
 }
@@ -132,6 +142,10 @@ nav.stroke ul li a:not(#not):after {
 }
 nav.stroke ul li a:not(#not):hover:after {
   width: 100%;
+}
+
+.mt-10 {
+    margin-top: 21vh;
 }
   
 #h2slider {
@@ -226,7 +240,6 @@ nav.stroke ul li a:not(#not):hover:after {
         background: #555;
     }
 
-
 .kontakt h5 {
         color: rgba(0, 153, 255, 0.842);
     }
@@ -235,7 +248,7 @@ nav.stroke ul li a:not(#not):hover:after {
         color: rgba(0, 0, 0, 0.8);
         padding-bottom: 2vh;
     }
-#choose:hover {
+.choose:hover {
     color: rgba(0, 153, 255, 0.842);
 }
 .line{
@@ -247,6 +260,10 @@ nav.stroke ul li a:not(#not):hover:after {
 
 a {
     color: rgba(16, 16, 100, 0.7) !important;
+}
+
+h4 a {
+    color: rgb(0,139,165) !important;
 }
 
 .linki_dokumentow,
@@ -280,6 +297,7 @@ footer {
     -webkit-box-shadow: 8px 8px 38px -11px rgba(66, 68, 90, 1);
     -moz-box-shadow: 8px 8px 38px -11px rgba(66, 68, 90, 1);
     box-shadow: 8px 8px 38px -11px rgba(66, 68, 90, 1);
-    height: 23vh;
+    position: absolute;
+    width: 100vw;
     background-color: #fbfbfb;
 }
