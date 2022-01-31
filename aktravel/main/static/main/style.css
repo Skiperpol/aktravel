@@ -7,6 +7,7 @@
     width: 100vw;
     height: auto;
     margin-top: 15vh;
+    min-height: 57vh;
 }
 
 #main_photo {
@@ -33,11 +34,13 @@
     background-color: white;
     font-family: 'Lato', sans-serif;
     padding-top: 6vh;
+    padding-bottom: 10vh;
+    margin-bottom: -0.1vh;
 }
 
 .textsection {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding-left: 13vw;
     padding-right: 13vw;
     background-color: white;
@@ -223,11 +226,12 @@ nav.stroke ul li a:not(#not):hover:after {
         background: #555;
     }
 
-.kontakt, h5 {
+
+.kontakt h5 {
         color: rgba(0, 153, 255, 0.842);
     }
     
-.kontakt, h6 {
+.kontakt h6 {
         color: rgba(0, 0, 0, 0.8);
         padding-bottom: 2vh;
     }
@@ -270,4 +274,12 @@ a {
 }
 .linki_dokumentow:hover:after {
   width: 100%;
+}
+
+footer {
+    -webkit-box-shadow: 8px 8px 38px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 38px -11px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 38px -11px rgba(66, 68, 90, 1);
+    height: 23vh;
+    background-color: #fbfbfb;
 }
