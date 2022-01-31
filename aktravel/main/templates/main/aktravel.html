@@ -1,5 +1,85 @@
 {% extends 'main/oferty.html' %}
 
+{% load static %}
 {% block podstrona %}
-<h3>Akravel</h3>
+<div class="textsection">
+<h3 style="color: rgb(0,139,165);">Czym jest Akravel?</h3>
+<h6 style="color: rgba(0, 0, 0, 0.9);">
+    AK Travel to firma o profilu turystycznym – inna niż wszystkie, organizuje niestandardowe wyprawy i wycieczki,
+    współtworzone z uczestnikami i szyte „na miarę”, dla grup standardowych, branżowych o profilach zawodowych lub
+    religijnych. W naszych wyprawach i imprezach biorą udział grupy od kilku, do kilkunastu osób, choć bywają i większe.
+</h6>
+<h3 style="color: rgb(0,139,165); padding-top: 2vh;">Historia</h3>
+<h6 style="color: rgba(0, 0, 0, 0.6);">
+    Kiedy w 1997 r rozpoczynałem przygodę z turystyką nawet nie śniło mi się, że wraz z turystami odwiedzę prawie
+    wszystkie kontynenty, stanę na szczycie Araratu, popływam w Bajkale, przejadę Gobi, wejdę na Chiński Mur czy na
+    Meksykańskie Piramidy i Machu Picchu. Nie wiedziałem, że odwiedzimy Amazonię i Rio, Ekwador i wyspy Galapagos, Hanoi
+    i Sajgon, Sydney i Auckland oraz Addis Abebę. Wspólnie pokonaliśmy też trasę Pociągiem Transsyberyjskim z Moskwy do
+    Pekinu, a piechotą do Santiago de Compostela. Z wieloma z szanownych klientów odwiedzaliśmy Bliski Wschód, Ziemię
+    Świętą od Egiptu przez Jordanię, Izrael, Palestynę, Liban i Syrię (jeszcze przed wojną) aż po Iran. Stanęliśmy też
+    na krańcach Europy od najdalej na zachód wysuniętego przylądka Capo da Roca po Jekaterynburg – bramę Azji na
+    wschodnim jej krańcu, jak też od Nordkapp przylądka na północy, po Gibraltar na południu.
+</h6>
+<h6 style="color: rgba(0, 0, 0, 0.9);">
+    25 lat na rynku (w różnych konfiguracjach) pozwoliło mi na zebranie dość sporego bagażu doświadczeń, dlatego AK
+    Travel zasięgiem swojego działania objęła już prawie cały świat. W jednej ze swoich książek napisałem cytat za św.
+    Augustynem … Świat jest książką i ci, którzy nie podróżują czytają tylko jedną stronę … no i coś w tym jest.
+</h6>
+<h6 style="color: rgba(0, 0, 0, 0.6);">
+    Turystyka to poznawanie krain, kultur i historii, turystyka to zaspakajanie swojej ciekawości świata, odmienności
+    tradycji, kuchni czy organizacji życia, w końcu turystyka to przygoda – wyrwanie się z za biurka i choć na chwilę
+    życie w „innym” świecie. Ze mną nie odpoczniesz, wrócisz zmęczony ale zadowolony.
+</h6>
+<br><div class="line"></div><br>
+<h3 style="color: rgb(0,139,165);">Dokumenty</h3>
+<a class="linki_dokumentow" href="{% static 'main/gwarancja.png' %}" target="_blank">1. Gwarancja Ubezpieczeniowa na 2022 rok</a><br>
+<a class="linki_dokumentow" href="{% static 'main/zasw.png' %}" target="_blank">2. Zaświadczenie o wpisie do ewidencji organizatorów turystyki</a><br>
+<a class="linki_dokumentow" href="{% static 'main/kompetencji_zawodowych.png' %}" target="_blank">3. Certyfikat kompetencji zawodowych w międzynarodowym transporcie drogowym osób.</a><br>
+<a class="linki_dokumentow" href="{% static 'main/cdig.pdf' %}" target="_blank">4. Zaświadczenie Ceidg o wpisie do ewidencji działalności gospodarczej</a><br>
+<a class="linki_dokumentow" href="{% static 'main/warunki.pdf' %}" target="_blank">5. Warunki uczestnictwa w imprezach organizowanych przez AK Travel</a><br>
+<!--WSTAWIENIE LINKÓW DO PDFÓW-->
+<br><div class="line"></div><br>
+<h3 style="color: rgb(0,139,165); padding-bottom: 1vh;">Kontakt</h3>
+<div class="kontakt">
+    <div style="width: 50%; height: auto; float: left;">
+        <h5>
+            Dane firmy:
+        </h5>
+        <h6>
+            AK Travel Andrzej Kulbida
+        </h6>
+        <h5>
+            Adres
+        </h5>
+        <h6>
+            ul. Księżnej Jadwigi Śląskiej 15/4<br>
+            58-100 Świdnica
+        </h6>
+        <h5>
+            NIP
+        </h5>
+        <h6>
+            895-132-95-31
+        </h6>
+    </div>
+    <div style="width: 50%; height: auto; float: left;">
+        <h5>
+            Regon
+        </h5>
+        <h6>
+            930956879
+        </h6>
+        <h5>
+            Telefon;
+        </h5>
+        <a href="tel:+48696414774"><h6 id="choose">+ 48 696 414 774</h6></a>
+        <h5>
+            Adres mail
+        </h5>
+        <a href = "mailto: andrzej.kulbida@gmail.com"><h6 id="choose">andrzej.kulbida@gmail.com</h6></a>
+    </div>
+
+
+</div>
+</div>
 {% endblock %}
