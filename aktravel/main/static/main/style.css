@@ -13,12 +13,12 @@ html {
     margin-top: 15vh;
     min-height: 62vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #main_photo {
     position: fixed;
-    top: 6vh;
+    top: 10vh;
     left: 0;
     object-fit: cover;
     z-index: -1;
@@ -34,7 +34,7 @@ html {
 }
 
 .mainsection {
-    margin-top: 40vh;
+    margin-top: 50vh;
     width: 100vw;
     height: auto;
     background-color: white;
@@ -101,7 +101,7 @@ html {
     transition: transform .6s ease;
     height: 30vh;
     width: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
     
   }
   
@@ -174,7 +174,7 @@ nav.stroke ul li a:not(#not):hover:after {
 }
 
 .navbar-toggler-icon {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png") !important;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png") !important;
 }
 
 .zdjecie_list_ofert {
@@ -183,7 +183,7 @@ nav.stroke ul li a:not(#not):hover:after {
     width: auto;
     height: 50vh;
     object-fit: cover;
-    filter: brightness(0.8);
+    filter: brightness(0.6);
     transition: filter .4s ease;
 }
 
@@ -191,31 +191,46 @@ nav.stroke ul li a:not(#not):hover:after {
     filter: brightness(1);
 }
 
-.special-card {
-    background-color: rgb(241, 241, 241);
-    height: auto;
+.round_card {
+    overflow: hidden;
+    transition: height .4s ease;
+    height: 20vh;
     position: relative;
 }
 
-
-@keyframes example {
-    from {
-        top: 0vh;}
-    to {
-        top: -15vh;}
-  }
-  
-.round_card:hover .special-card {
-    animation: example .3s forwards linear;
+.round_card:hover {
+    height: 30vh;
 }
 
-.round_card:hover .zdjecie_list_ofert {
-    filter: brightness(1);
-}
-
-.round_card {
+.round_card_ksiazka {
     overflow: hidden;
-    height: 60vh;
+    transition: height .4s ease;
+    height: 50vh;
+    position: relative;
+    width: 45%;
+    float: left;
+    margin-left: 2%;
+}
+
+
+.oferty_inside_card {
+    position: absolute;
+    color: white;
+    font-size: 1.6em;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    transition: left .5s ease;
+}
+
+.round_card:hover .oferty_inside_card {
+    left: 90%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 /* CUSTOMOWY SCROLLBAR */

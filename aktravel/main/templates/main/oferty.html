@@ -4,21 +4,19 @@
 {% block cytat %}{% endblock %}
 {% block content %}
 
-<main class="main_podstrony">
+<div class="main_podstrony">
     {% block podstrona %}
-    <h3 class="mb-5">Dostępne oferty</h3>
-
-    {% for oferta in oferty %}
-    <div class="card mb-4 round_card">
-        <img class="zdjecie_list_ofert" src="{{ oferta.zdjecie_glowne.url }}" alt="Card image cap">
-        <div class="card-body special-card">
-          <h5 class="card-title">{{ oferta }}</h5>
-          <p class="card-text">{{ oferta.opis }}</p>
-        </div>
+    <h3 class="mb-5 float-left">Dostępne oferty</h3>
+    {% for oferta_i in oferty %}
+    <a href="{% url 'oferta' oferta_i.id %}">
+      <div class="card mb-4 round_card">
+          <img class="zdjecie_list_ofert" src="{{ oferta_i.zdjecie_glowne.url }}" alt="Card image cap">
+          <div class="oferty_inside_card">{{ oferta_i }}</div>
       </div>
+    </a>
     {% endfor %}
 
     {% endblock %}
-</main>
+</div>
 
 {% endblock %}

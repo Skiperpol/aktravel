@@ -1,5 +1,22 @@
-{% extends 'main/oferty.html' %}
+{% extends 'main/base.html' %}
+{% load static %}
+{% block image %}{% endblock %}
+{% block cytat %}{% endblock %}
+{% block content %}
 
-{% block podstrona %}
-<h3>Nasze publikacje</h3>
+<div class="main_podstrony">
+    {% block podstrona %}
+    <h3 class="mb-5 float-left">Nasze publikacje</h3>
+    {% for oferta_i in ksiazki %}
+    <a href="{{ oferta_i.link}}" target="blank_">
+      <div class="card mb-4 round_card_ksiazka">
+          <img class="zdjecie_list_ofert" src="{{ oferta_i.zdjecie_glowne.url }}" alt="Card image cap">
+          <div class="oferty_inside_card">{{ oferta_i }}</div>
+      </div>
+    </a>
+    {% endfor %}
+    
+    {% endblock %}
+</div>
+
 {% endblock %}

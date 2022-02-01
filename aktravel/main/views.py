@@ -28,7 +28,8 @@ def oferty(response):
     return render(response, "main/oferty.html", {"oferty":oferty})
 
 def ksiazki(response):
-    return render(response, "main/ksiazki.html")
+    ksiazki = Ksiazki.objects.all()
+    return render(response, "main/ksiazki.html", {"ksiazki":ksiazki})
     
 
 
