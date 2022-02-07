@@ -120,43 +120,6 @@ html {
 }
 
 
-@media only screen and (max-width: 600px) {
-    #logo_ak_travel {
-        width: 35vw !important;
-    }
-
-    .navbar-brand {
-        margin-left: 0.5em;
-    }
-
-    .show ul li {
-        margin-left: 1.5em;
-    }
-    
-    .collapsing ul li {
-        margin-left: 1.5em;
-    }
-
-    .mainsection {
-        margin-top: 24vh;
-    }
-    .augustyn {
-        top: 21vh;
-        left: 5vw;
-        transform: translate(-0%, -50%);
-        width: 90vw;
-    }
-    #main_photo {
-        object-position: 74% top;
-        top: 0vh;
-    }
-    .ksiazka_karuzela {
-        width: 90vw !important;
-        margin-left: auto;
-    
-    }
-}
-
 /* stroke */
 nav ul li a:not(#not),
 nav ul li a:not(#not):after,
@@ -358,4 +321,60 @@ footer {
     position: absolute;
     width: 100vw;
     background-color: #fbfbfb;
+}
+
+.covid_tekst {
+    text-align: left !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #logo_ak_travel {
+        width: 35vw !important;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5em;
+    }
+
+    .show ul li {
+        margin-left: 1.5em;
+    }
+    
+    .collapsing ul li {
+        margin-left: 1.5em;
+    }
+
+    .mainsection {
+        margin-top: 24vh;
+    }
+    .augustyn {
+        top: 21vh;
+        left: 5vw;
+        transform: translate(-0%, -50%);
+        width: 90vw;
+    }
+    #main_photo {
+        object-position: 74% top;
+        top: 0vh;
+    }
+    .ksiazka_karuzela {
+        width: 90vw !important;
+        margin-left: auto;
+    }
+    .main_podstrony {
+        margin-top: 0;
+    }
+    
+    .round_card_ksiazka {
+        width: 95%;
+    }
+
+    .textsection {
+        padding: 0;
+    }
+
+    .mt-10 {
+        margin-top: 15vh;
+    }
 }
