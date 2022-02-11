@@ -1,9 +1,44 @@
 {% extends 'main/base.html' %}
-{% block title %}{{oferta}}{% endblock %}
-
+{% load static %}
+{% block image %}{% endblock %}
+{% block cytat %}{% endblock %}
 {% block content %}
-<h2>{{oferta}}</h2>
-<br>
-{{oferta.opis}}
 
+
+<div class="main_podstrony oferta" style="width: 70vw;">
+<h2 class="text-center">{{oferta.tytul|linebreaks}}</h2>
+
+{% if oferta.historia %}
+<h6 class="text-center" style="color: black;">{{oferta.historia|linebreaks}}</h6>
+{% endif %}
+
+{% if oferta.opis_dni %}
+<h6>{{oferta.opis_dni|linebreaks}}</h6>
+{% endif %}
+
+<br>
+{% if oferta.termin %}
+<h5>Termin:</h5><h6>{{oferta.termin|linebreaks}}</h6>
+{% endif %}
+
+{% if oferta.cena %}
+<h5>Cena:</h5><h6>{{oferta.cena|linebreaks}}</h6>
+{% endif %}
+
+{% if oferta.cena_zawiera %}
+<h5>Cena obejmuje:</h5><h6>{{oferta.cena_zawiera|linebreaks}}</h6>
+{% endif %}
+
+{% if oferta.cena_nie_zawiera %}
+<h5>Cena nie obejmuje:</h5><h6>{{oferta.cena_nie_zawiera|linebreaks}}</h6>
+{% endif %}
+
+{% if oferta.wazne_informacje %}
+<h5>Ważne informacje!</h5><h6>{{oferta.wazne_informacje|linebreaks}}</h6>
+{% endif %}
+
+{% if oferta.uwagi %}
+<h6 class="text-center" style="font-size: 30px; color: red;">Uwaga!</h6><h6>{{oferta.uwagi|linebreaks}}</h6><br>
+{% endif %}
+</div>
 {% endblock %}

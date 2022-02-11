@@ -327,6 +327,15 @@ footer {
     text-align: left !important;
 }
 
+.oferta h2 {
+    margin-top: 5vh;
+    font-size: 50px;
+    color: rgb(0,139,165);
+}
+
+.oferta h5 {
+    color: rgb(0,139,165);
+}
 
 @media only screen and (max-width: 600px) {
     #logo_ak_travel {
