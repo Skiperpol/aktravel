@@ -1,6 +1,17 @@
 {% extends 'main/base.html' %}
 {% load static %}
-{% block image %}<img src="{% static 'main/airplane_main_photo_ak.jpg' %}" alt="Main photo" id="main_photo">{% endblock %}
+{% block image %}
+
+
+
+<div class="image-container">
+    <img src="{% static 'main/airplane_main_photo_ak.jpg' %}" alt="Main photo" id="main_photo">
+    <img src="{% static 'main/balony.jpg' %}" alt="Main photo" id="main_photo">
+    <img src="{% static 'main/wybrzeza.jpg' %}" alt="Main photo" id="main_photo">
+    <img src="{% static 'main/kanal.jpg' %}" alt="Main photo" id="main_photo">
+</div>
+
+{% endblock %}
 {% block content %}
 
 <main class="mainsection">
