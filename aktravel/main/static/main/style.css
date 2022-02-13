@@ -352,8 +352,10 @@ footer {
 .gallery {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
     margin-top: 5vh;

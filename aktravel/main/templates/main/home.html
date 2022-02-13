@@ -61,7 +61,7 @@
                 <p class="card-text">
                 {{ oferta.opis }}
                 </p>
-                <a href="#!" class="btn btn-outline-primary">Szczegóły</a>
+                <a href="{% url 'oferta' oferta.id %}" class="btn btn-outline-primary">Szczegóły</a>
             </div>
             {% endwith %}
             {% endwith %}
