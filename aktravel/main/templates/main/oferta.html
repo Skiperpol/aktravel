@@ -5,7 +5,10 @@
 {% block content %}
 
 
-<div class="main_podstrony oferta" style="width: 70vw;">
+<div class="main_podstrony oferta">
+<div class="oferta_main_photo">
+    <img src="{{ oferta.zdjecie_glowne }}">
+</div>
 <h2 class="text-center">{{oferta.tytul|linebreaks}}</h2>
 
 {% if oferta.historia %}
@@ -41,4 +44,12 @@
 <h6 class="text-center" style="font-size: 30px; color: red;">Uwaga!</h6><h6>{{oferta.uwagi|linebreaks}}</h6><br>
 {% endif %}
 </div>
+
+<ul class="gallery">
+{% for zdjecie in zdjecia %}
+    <li>
+        <img src="{{ zdjecie.zdjecie }}" alt="">
+    </li>
+{% endfor %}
+</ul>
 {% endblock %}

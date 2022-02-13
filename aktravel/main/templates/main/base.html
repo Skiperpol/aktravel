@@ -51,9 +51,10 @@
                           Aktravel
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% load custom_tags %}
                         <li><a class="dropdown-item" href="{% url 'firma' %}">O nas</a></li>
-                        <li><a class="dropdown-item" href="{% url 'firma' %}">Dokumenty</a></li>
-                        <li><a class="dropdown-item" href="{% url 'firma' %}">Kontakt</a></li>
+                        <li><a class="dropdown-item" href="{% anchor 'firma' 'dokumenty' %}">Dokumenty</a></li>
+                        <li><a class="dropdown-item" href="{% anchor 'firma' 'kontakt' %}">Kontakt</a></li> 
                       </ul>
                     </li>
                   <li class="nav-item">

@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Oferta, Ksiazki
+from .models import Oferta, Ksiazki, Zdjecia
 
 # Create your views here.
 
 def oferta(response, id):
     oferta = Oferta.objects.get(id=id)
-    return render(response, "main/oferta.html", {"oferta":oferta})
+    zdjecia = Zdjecia.objects.filter(oferta=oferta)
+    return render(response, "main/oferta.html", {"oferta":oferta, "zdjecia":zdjecia})
 
 def home(response):
     oferty = Oferta.objects.all()
